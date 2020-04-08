@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-2951" y="654"/>
         </scene>
-        <!--MapView-->
+        <!--FavouritesView-->
         <scene sceneID="9vY-gp-IJD">
             <objects>
-                <viewControllerPlaceholder storyboardName="MapView" id="VWr-IU-5o5" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="FavouritesView" id="VWr-IU-5o5" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="SnC-Tj-t5w"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8E-PW-oQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,20 +86,20 @@
             </objects>
             <point key="canvasLocation" x="-643" y="654"/>
         </scene>
-        <!--ListView-->
+        <!--MapView-->
         <scene sceneID="Sf9-sw-eGR">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="InspectionsInitialViewController" storyboardName="ListView" id="zNm-u5-aKV" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="InspectionsInitialViewController" storyboardName="MapView" id="zNm-u5-aKV" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="dWo-wg-G1h"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1XT-Ur-F0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1741" y="1100"/>
         </scene>
-        <!--FavoritesView-->
+        <!--ListView-->
         <scene sceneID="9de-CL-EOh">
             <objects>
-                <viewControllerPlaceholder storyboardName="FavoritesView" id="MvF-lj-HFW" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ListView" id="MvF-lj-HFW" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="juY-ms-yuX"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cg8-IS-lqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
