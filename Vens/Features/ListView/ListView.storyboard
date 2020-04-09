@@ -7,16 +7,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Shops ListVC-->
         <scene sceneID="AKC-wt-Yoy">
             <objects>
-                <viewController id="GJW-KW-SQU" sceneMemberID="viewController">
+                <viewController id="GJW-KW-SQU" customClass="ShopsListVC" customModule="Vens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dHd-e3-PW8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4C-i2-LnE" userLabel="FinderMainStackView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Rin-WS-hBo"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mGh-nJ-df6">
+                                <rect key="frame" x="0.0" y="154" width="414" height="708"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="p4C-i2-LnE" firstAttribute="leading" secondItem="nCi-w5-NGC" secondAttribute="leading" id="3jU-zv-4qe"/>
+                            <constraint firstItem="p4C-i2-LnE" firstAttribute="top" secondItem="nCi-w5-NGC" secondAttribute="top" id="FY5-bK-djT"/>
+                            <constraint firstItem="nCi-w5-NGC" firstAttribute="trailing" secondItem="mGh-nJ-df6" secondAttribute="trailing" id="MkF-iO-2Es"/>
+                            <constraint firstItem="nCi-w5-NGC" firstAttribute="bottom" secondItem="mGh-nJ-df6" secondAttribute="bottom" id="XpK-uV-kO5"/>
+                            <constraint firstItem="mGh-nJ-df6" firstAttribute="top" secondItem="p4C-i2-LnE" secondAttribute="bottom" id="mAB-1q-8HK"/>
+                            <constraint firstItem="mGh-nJ-df6" firstAttribute="leading" secondItem="nCi-w5-NGC" secondAttribute="leading" id="vIV-g0-Ps3"/>
+                            <constraint firstItem="nCi-w5-NGC" firstAttribute="trailing" secondItem="p4C-i2-LnE" secondAttribute="trailing" id="zmO-zh-p2S"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nCi-w5-NGC"/>
                     </view>
+                    <connections>
+                        <outlet property="shopsTableView" destination="mGh-nJ-df6" id="TU5-fM-co5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAW-dn-4fZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

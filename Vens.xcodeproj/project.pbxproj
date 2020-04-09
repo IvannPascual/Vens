@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		707A7E70243D150E0068EF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707A7E6E243D150E0068EF4A /* LaunchScreen.storyboard */; };
 		707A7E7B243D150E0068EF4A /* VensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A7E7A243D150E0068EF4A /* VensTests.swift */; };
 		707A7E86243D150E0068EF4A /* VensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A7E85243D150E0068EF4A /* VensUITests.swift */; };
+		70EA6249243F64A10070CCCD /* ShopsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA6248243F64A10070CCCD /* ShopsListVC.swift */; };
+		70EA624E243F66FC0070CCCD /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA624C243F66FC0070CCCD /* ShopCell.swift */; };
+		70EA624F243F66FC0070CCCD /* ShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70EA624D243F66FC0070CCCD /* ShopCell.xib */; };
 		8BC6AC18243E43020053DFA7 /* TabsStructure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC6AC17243E43020053DFA7 /* TabsStructure.storyboard */; };
 		8BC6AC1E243E45690053DFA7 /* FavouritesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC6AC1D243E45690053DFA7 /* FavouritesView.storyboard */; };
 		8BC6AC20243E45750053DFA7 /* ListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC6AC1F243E45750053DFA7 /* ListView.storyboard */; };
@@ -61,6 +64,9 @@
 		707A7E81243D150E0068EF4A /* VensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		707A7E85243D150E0068EF4A /* VensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VensUITests.swift; sourceTree = "<group>"; };
 		707A7E87243D150E0068EF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70EA6248243F64A10070CCCD /* ShopsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsListVC.swift; sourceTree = "<group>"; };
+		70EA624C243F66FC0070CCCD /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
+		70EA624D243F66FC0070CCCD /* ShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopCell.xib; sourceTree = "<group>"; };
 		78F4F5183084B7FD93B23DF1 /* Pods-VensTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VensTests.debug.xcconfig"; path = "Target Support Files/Pods-VensTests/Pods-VensTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8BC6AC17243E43020053DFA7 /* TabsStructure.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabsStructure.storyboard; sourceTree = "<group>"; };
 		8BC6AC1D243E45690053DFA7 /* FavouritesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavouritesView.storyboard; sourceTree = "<group>"; };
@@ -209,6 +215,9 @@
 			isa = PBXGroup;
 			children = (
 				8BC6AC1F243E45750053DFA7 /* ListView.storyboard */,
+				70EA6248243F64A10070CCCD /* ShopsListVC.swift */,
+				70EA624C243F66FC0070CCCD /* ShopCell.swift */,
+				70EA624D243F66FC0070CCCD /* ShopCell.xib */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -239,7 +248,6 @@
 				F376C717959E4532721984FE /* Pods-VensUITests.debug.xcconfig */,
 				C0E8CDDB9A42B13C34E1B204 /* Pods-VensUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -358,6 +366,7 @@
 				707A7E6D243D150E0068EF4A /* Assets.xcassets in Resources */,
 				8BC6AC18243E43020053DFA7 /* TabsStructure.storyboard in Resources */,
 				707A7E6B243D150D0068EF4A /* Main.storyboard in Resources */,
+				70EA624F243F66FC0070CCCD /* ShopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +479,8 @@
 			files = (
 				707A7E68243D150D0068EF4A /* ViewController.swift in Sources */,
 				8BC6AC24243E45990053DFA7 /* TabsStructure.swift in Sources */,
+				70EA624E243F66FC0070CCCD /* ShopCell.swift in Sources */,
+				70EA6249243F64A10070CCCD /* ShopsListVC.swift in Sources */,
 				8BC6AC27243E45D40053DFA7 /* StringExtension.swift in Sources */,
 				707A7E64243D150D0068EF4A /* AppDelegate.swift in Sources */,
 				707A7E66243D150D0068EF4A /* SceneDelegate.swift in Sources */,
