@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		707A7E70243D150E0068EF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707A7E6E243D150E0068EF4A /* LaunchScreen.storyboard */; };
 		707A7E7B243D150E0068EF4A /* VensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A7E7A243D150E0068EF4A /* VensTests.swift */; };
 		707A7E86243D150E0068EF4A /* VensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A7E85243D150E0068EF4A /* VensUITests.swift */; };
+		70EA623E243F574D0070CCCD /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA623D243F574D0070CCCD /* Description.swift */; };
+		70EA6246243F5E3B0070CCCD /* LocalJsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = 70EA6245243F5E3B0070CCCD /* LocalJsonData.json */; };
 		8BC6AC18243E43020053DFA7 /* TabsStructure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC6AC17243E43020053DFA7 /* TabsStructure.storyboard */; };
 		8BC6AC1E243E45690053DFA7 /* FavouritesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC6AC1D243E45690053DFA7 /* FavouritesView.storyboard */; };
 		8BC6AC20243E45750053DFA7 /* ListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC6AC1F243E45750053DFA7 /* ListView.storyboard */; };
@@ -61,6 +63,8 @@
 		707A7E81243D150E0068EF4A /* VensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		707A7E85243D150E0068EF4A /* VensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VensUITests.swift; sourceTree = "<group>"; };
 		707A7E87243D150E0068EF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70EA623D243F574D0070CCCD /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		70EA6245243F5E3B0070CCCD /* LocalJsonData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LocalJsonData.json; sourceTree = "<group>"; };
 		78F4F5183084B7FD93B23DF1 /* Pods-VensTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VensTests.debug.xcconfig"; path = "Target Support Files/Pods-VensTests/Pods-VensTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8BC6AC17243E43020053DFA7 /* TabsStructure.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabsStructure.storyboard; sourceTree = "<group>"; };
 		8BC6AC1D243E45690053DFA7 /* FavouritesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavouritesView.storyboard; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 		707A7E62243D150D0068EF4A /* Vens */ = {
 			isa = PBXGroup;
 			children = (
+				70EA623C243F57280070CCCD /* Data */,
 				8BC6AC19243E44E60053DFA7 /* Features */,
 				8BC6AC15243E42E90053DFA7 /* BaseCode */,
 				707A7E63243D150D0068EF4A /* AppDelegate.swift */,
@@ -167,6 +172,23 @@
 				707A7E87243D150E0068EF4A /* Info.plist */,
 			);
 			path = VensUITests;
+			sourceTree = "<group>";
+		};
+		70EA623C243F57280070CCCD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				70EA6247243F5E540070CCCD /* JsonFiles */,
+				70EA623D243F574D0070CCCD /* Description.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		70EA6247243F5E540070CCCD /* JsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				70EA6245243F5E3B0070CCCD /* LocalJsonData.json */,
+			);
+			path = JsonFiles;
 			sourceTree = "<group>";
 		};
 		8BC6AC15243E42E90053DFA7 /* BaseCode */ = {
@@ -239,7 +261,6 @@
 				F376C717959E4532721984FE /* Pods-VensUITests.debug.xcconfig */,
 				C0E8CDDB9A42B13C34E1B204 /* Pods-VensUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -352,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BC6AC1E243E45690053DFA7 /* FavouritesView.storyboard in Resources */,
+				70EA6246243F5E3B0070CCCD /* LocalJsonData.json in Resources */,
 				8BC6AC22243E45810053DFA7 /* MapView.storyboard in Resources */,
 				8BC6AC20243E45750053DFA7 /* ListView.storyboard in Resources */,
 				707A7E70243D150E0068EF4A /* LaunchScreen.storyboard in Resources */,
@@ -468,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EA623E243F574D0070CCCD /* Description.swift in Sources */,
 				707A7E68243D150D0068EF4A /* ViewController.swift in Sources */,
 				8BC6AC24243E45990053DFA7 /* TabsStructure.swift in Sources */,
 				8BC6AC27243E45D40053DFA7 /* StringExtension.swift in Sources */,
